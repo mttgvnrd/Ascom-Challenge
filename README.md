@@ -1,32 +1,33 @@
-# Ascom-Challenge
+# Patient App
 
-Questo progetto è un'applicazione web basata su React per la gestione dei dati dei pazienti. L'applicazione permette di visualizzare una lista di pazienti.
+Questa applicazione gestisce i dati dei pazienti e visualizza informazioni tramite una tabella interattiva. Utilizza React per la parte frontend e Axios per la gestione delle richieste HTTP.
 
-Funzionalità principali
-Visualizzazione lista pazienti: Recupera e mostra un elenco di pazienti.
-Dettagli paziente: Visualizza i dettagli completi di un singolo paziente, incluse le informazioni personali e i parametri associati.
-Sistema di allarme: Ogni parametro ha uno stato di allarme che può attivare avvisi visivi quando il valore di un parametro supera una soglia prestabilita.
+## Tecnologie utilizzate
 
-Tecnologie utilizzate
-Frontend: React.js, JSX, HTML, CSS
-Gestione dello stato: React Hooks (useState, useEffect, etc.)
-Richieste HTTP: Axios per le chiamate API
-Strumento di build: Webpack per il bundling dell'applicazione
-API: L'app interagisce con un'API di backend per ottenere e inviare dati dei pazienti
+- **React**: Libreria JavaScript per la costruzione dell'interfaccia utente.
+- **Material-UI**: Componenti UI predefiniti per una rapida creazione di interfacce.
+- **Axios**: Libreria per effettuare richieste HTTP.
+- **ag-Grid**: Una potente libreria per la visualizzazione di dati in formato tabellare.
+- **React Router**: Gestione della navigazione tra le pagine.
+- **Babel e Webpack**: Utilizzati per la compilazione e il bundle del codice.
 
-Requisiti
-Per eseguire questo progetto in locale, è necessario avere installato sul proprio computer:
+## Prerequisiti
 
-Node.js (versione 14 o successiva)
-npm (Node package manager)
+Per eseguire l'applicazione in locale, assicurati di avere i seguenti strumenti installati:
 
-Una volta dentro la cartella del progetto, esegui il comando per installare tutte le dipendenze necessarie:
-npm install
+- [Node.js](https://nodejs.org/) (v18.3.1 o superiore)
+- [npm](https://www.npmjs.com/) (v8 o superiore)
 
-Per avviare il server di sviluppo e visualizzare l'app in locale, esegui il seguente comando:
-npm start
-Questo avvierà l'applicazione su http://localhost:3000.
+## Installazione
 
-Se desideri preparare una versione ottimizzata per la produzione, puoi creare una build eseguendo:
-npm run build
-Questo genererà una cartella build/ contenente i file minificati e ottimizzati per il deployment.
+ **Clona il repository** sul tuo computer:
+   
+   git clone https://github.com/mttgvn/patient-app.git
+   cd patient-app
+
+   Installa le dipendenze del progetto:
+    npm install
+
+
+  Per avviare l'applicazione, esegui il comando:
+  npm start
