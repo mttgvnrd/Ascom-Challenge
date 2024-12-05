@@ -12,7 +12,7 @@ const PatientGrid = () => {
     const loadPatients = async () => {
       try {
         const data = await fetchPatients();
-        console.log("Dati caricati:", data); // Controlla qui i dati
+        console.log("Dati caricati:", data);
         setPatients(data || []);
       } catch (error) {
         console.error("Errore nel caricamento dei pazienti:", error);
@@ -21,7 +21,6 @@ const PatientGrid = () => {
     loadPatients();
   }, []);
 
-  // Colonne della DataGrid
   const columns = [
     { field: "FamilyName", headerName: "Family Name", width: 150 },
     { field: "GivenName", headerName: "Given Name", width: 150 },
@@ -39,9 +38,8 @@ const PatientGrid = () => {
     },
   ];
 
-  // Creazione delle righe
   const rows = patients.map((p, index) => ({
-    id: p.id || index, // Usa `id` o un fallback
+    id: p.id || index, 
     FamilyName: p.familyName,
     GivenName: p.givenName,
     Sex: p.sex,
@@ -50,13 +48,11 @@ const PatientGrid = () => {
     parameters: p.parameters,
   }));
 
-  // Funzione per aprire il dialogo
   const handleRowClick = (params) => {
     setSelectedPatient(params.row);
     setIsDialogOpen(true);
   };
 
-  // Funzione per chiudere il dialogo
   const handleCloseDialog = () => {
     setIsDialogOpen(false);
     setSelectedPatient(null);
