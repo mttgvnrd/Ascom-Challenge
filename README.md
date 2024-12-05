@@ -22,7 +22,7 @@ Per eseguire l'applicazione in locale, assicurati di avere i seguenti strumenti 
 
  **Clona il repository** sul tuo computer:
    
-   git clone https://github.com/mttgvn/patient-app.git
+   git clone[ https://github.com/mttgvn/patient-app.git](https://github.com/mttgvnrd/Ascom-Challenge)
    cd patient-app
 
    Installa le dipendenze del progetto:
