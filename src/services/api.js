@@ -1,5 +1,4 @@
 import axios from "axios";
-//import patients from "../mockData/patients.json";
 
 const API_URL = "https://mobile.digistat.it/CandidateApi";
 const auth = {
@@ -7,19 +6,6 @@ const auth = {
   password: "TestMePlease!",
 };
 
-
-/*export const fetchPatients = async () => {
-  // Simula un ritardo per imitare l'API
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(patients);
-    }, 500); // 500ms di ritardo
-  });
-};*/
-
-
-
-// Ottieni lista pazienti dall'API
 export const fetchPatients = async () => {
   try {
     const response = await axios.get(`${API_URL}/Patient/GetList`, { auth });
