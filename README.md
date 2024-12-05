@@ -7,7 +7,6 @@ Questa applicazione gestisce i dati dei pazienti e visualizza informazioni trami
 - **React**: Libreria JavaScript per la costruzione dell'interfaccia utente.
 - **Material-UI**: Componenti UI predefiniti per una rapida creazione di interfacce.
 - **Axios**: Libreria per effettuare richieste HTTP.
-- **React Router**: Gestione della navigazione tra le pagine.
 - **Babel e Webpack**: Utilizzati per la compilazione e il bundle del codice.
 
 ## Prerequisiti
